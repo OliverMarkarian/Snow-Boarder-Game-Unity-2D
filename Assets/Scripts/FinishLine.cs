@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
-
-
 {
     [SerializeField] float loadDelay = 2f;
     [SerializeField] ParticleSystem finishEffect;
