@@ -9,8 +9,13 @@ public class CrashDetector : MonoBehaviour
         if(other.tag == "Ground")
         {
             Debug.Log("Ouch, hit my head");
-            SceneManager.LoadScene(0);
-        }
-        
+            Invoke("reloadScene",0.2f);
+            
+        }   
     }
+    void reloadScene(){
+        SceneManager.LoadScene(0);
+    }
+
+
 }
