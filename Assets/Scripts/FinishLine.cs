@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,11 +6,15 @@ public class FinishLine : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene();
+            StartCoroutine(LoadSceneAfterDelay(2));
         }
+    }
 
+    IEnumerator LoadSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay); 
+        SceneManager.LoadScene(0); 
     }
 }
