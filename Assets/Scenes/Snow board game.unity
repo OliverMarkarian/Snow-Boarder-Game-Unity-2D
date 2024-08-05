@@ -293,7 +293,7 @@ Transform:
   m_GameObject: {fileID: 80234993}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.777954, y: 38.7, z: -10}
+  m_LocalPosition: {x: -50.22141, y: 38.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -482,7 +482,7 @@ Transform:
   m_GameObject: {fileID: 915310566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.777954, y: 38.7, z: -10}
+  m_LocalPosition: {x: -50.22141, y: 38.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -513,10 +513,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917350909}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a7bd7e213ae25db4894d3c0d80c291f3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d61add8ca474bb24b999fc314d82b124, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -629,6 +629,7 @@ GameObject:
   - component: {fileID: 941323861}
   - component: {fileID: 941323865}
   - component: {fileID: 941323866}
+  - component: {fileID: 941323867}
   m_Layer: 0
   m_Name: Dennis
   m_TagString: Untagged
@@ -649,8 +650,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.1
+  m_AngularDrag: 1
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -750,6 +751,19 @@ CircleCollider2D:
   m_Offset: {x: 0.38460365, y: 0.98855406}
   serializedVersion: 2
   m_Radius: 0.29422772
+--- !u!114 &941323867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941323860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e94ecbbbaa5b5469cb749de987bc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueSpeed: 50
 --- !u!1 &1772833460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1939,7 +1953,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -2845,7 +2859,7 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 20
+  m_Speed: 30
   m_SpeedVariation: 0
   m_ForceScale: 0.1
   m_UseContactForce: 0
