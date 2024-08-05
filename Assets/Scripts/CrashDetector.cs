@@ -9,14 +9,8 @@ public class CrashDetector : MonoBehaviour
         if(other.tag == "Ground")
         {
             Debug.Log("Ouch, hit my head");
-            StartCoroutine(LoadSceneAfterDelay(0.5f)); 
+            SceneManager.LoadScene(0);
         }
         
-
-    IEnumerator LoadSceneAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(0); 
-    }
     }
 }
