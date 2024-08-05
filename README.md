@@ -5,4 +5,9 @@
 
  The exe file is called Snow Boarder
 
+
+ Once in game try to reach the end without banging your head by using A(rotate left) and D(rotate right).
+
+ Use the W key for a speed boost.
+
  
